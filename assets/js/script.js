@@ -4,7 +4,6 @@ let zSpasing = -1000,
     lastPos = zSpasing / 5,
     $frames = document.getElementsByClassName('frame'),
     frames = Array.from($frames),
-    framesLegth = frames.length,
     zVals = []
 
 window.onscroll = function () {
