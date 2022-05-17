@@ -4,6 +4,7 @@ let zSpasing = -1000,
     lastPos = zSpasing / 5,
     $frames = document.getElementsByClassName('frame'),
     frames = Array.from($frames),
+    framesLegth = frames.length,
     zVals = []
 
 window.onscroll = function () {
@@ -29,7 +30,7 @@ window.scrollTo(0, 1)
 
 let soundButton = document.querySelector('.soundButton'),
     audio = document.querySelector('audio')
-soundButton.addEventListener('click', e =>{
+soundButton.addEventListener('click', e => {
     soundButton.classList.toggle('paused')
     audio.paused ? audio.play() : audio.pause()
 })
